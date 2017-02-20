@@ -24,10 +24,10 @@ Alternatively, you can run commands (Win32):
 
 Compile:
 
-    csc ProgramName.cs
+    csc example1.cs
 
 Run:
 
-    ProgramName
+    example1
 
 
