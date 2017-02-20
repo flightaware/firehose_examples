@@ -1,0 +1,36 @@
+ Running Client
+msg: {"type":"position","ident":"VOI423","air_ground":"A","alt":"7400","clock":"1440096358","id":"VOI423-1439922000-schedule-0001","gs":"184","heading":"295","hexid":"0D081C","lat":"20.54741","lon":"-103.36899","updateType":"A","altChange":"C"}
+
+--------- Parsing Results --------
+type       position  
+ident      VOI423    
+airground  A         
+alt        7400      
+clock      1440096358
+id         VOI423-1439922000-schedule-0001
+gs         184       
+heading    295       
+lat        20.54741  
+lon        -103.36899
+reg        null      
+squawk     null      
+updateType A         
+---------------------------------
+
+msg: {"type":"position","ident":"N317SW","air_ground":"A","alt":"5600","clock":"1440096358","id":"N317SW-1440095950-adhoc-0","gs":"169","heading":"62","hexid":"A36277","lat":"41.58961","lon":"-92.50894","reg":"N317SW","squawk":"1200","updateType":"A","altChange":"C"}
+
+--------- Parsing Results --------
+type       position  
+ident      N317SW    
+airground  A         
+alt        5600      
+clock      1440096358
+id         N317SW-1440095950-adhoc-0
+gs         169       
+heading    62        
+lat        41.58961  
+lon        -92.50894 
+reg        N317SW    
+squawk     1200      
+updateType A         
+---------------------------------

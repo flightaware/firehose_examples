@@ -1,0 +1,45 @@
+
+sslStream AuthenticateAsClient completed.
+ Received:  {"type":"position","ident":"AAL363","air_ground":"A","alt":"37200","
+lock":"1417488737","id":"AAL363-1417242628-airline-0282","gs":"374","heading":"
+79","lat":"42.81940","lon":"-83.97197","reg":"N930NN","updateType":"A"}
+
+ ------------------- Message ----------------------
+
+ type       position
+ ident      AAL363
+ airground  A
+ alt        37200
+ clock      1417488737
+ id         AAL363-1417242628-airline-0282
+ gs         374
+ heading    279
+ lat        42.81940
+ lon        -83.97197
+ reg        N930NN
+ squawk
+ updateType A
+
+ -------------------------------------------------
+
+ Received:  {"type":"position","ident":"AWE798","air_ground":"A","alt":"37000","
+lock":"1417488736","id":"AWE798-1417242974-airline-0052","gs":"545","heading":"
+2","lat":"43.14862","lon":"-68.63178","reg":"N206UW","updateType":"A"}
+
+ ------------------- Message ----------------------
+
+ type       position
+ ident      AWE798
+ airground  A
+ alt        37000
+ clock      1417488736
+ id         AWE798-1417242974-airline-0052
+ gs         545
+ heading    42
+ lat        43.14862
+ lon        -68.63178
+ reg        N206UW
+ squawk
+ updateType A
+
+ -------------------------------------------------

@@ -1,0 +1,38 @@
+
+ Running Client
+msg: {"type":"position","ident":"TFR52","air_ground":"A","alt":"7000","clock":"1440101019","id":"TFR52-1440084510-fds-0000:0","gs":"319","heading":"286","hexid":"C81E1C","lat":"-16.61007","lon":"145.81540","reg":"ZKTLE","squawk":"6025","updateType":"A","altChange":"C"}
+
+--------- Parsing Results --------
+ type       position  
+ ident      TFR52     
+ airground  A         
+ alt        7000      
+ clock      1440101019
+ id         TFR52-1440084510-fds-0000:0
+ gs         319       
+ heading    286       
+ lat        -16.61007 
+ lon        145.81540 
+ reg        ZKTLE     
+ squawk     6025      
+ updateType A          
+---------------------------------
+
+msg: {"type":"position","ident":"TFR52","air_ground":"A","alt":"7000","clock":"1440101019","id":"TFR52-1440084510-fds-0000","gs":"319","heading":"286","hexid":"C81E1C","lat":"-16.61007","lon":"145.81540","reg":"ZKTLE","squawk":"6025","updateType":"A","altChange":" "}
+
+--------- Parsing Results --------
+ type       position  
+ ident      TFR52     
+ airground  A         
+ alt        7000      
+ clock      1440101019
+ id         TFR52-1440084510-fds-0000
+ gs         319       
+ heading    286       
+ lat        -16.61007 
+ lon        145.81540 
+ reg        ZKTLE     
+ squawk     6025      
+ updateType A          
+---------------------------------
+

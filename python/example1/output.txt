@@ -1,0 +1,57 @@
+
+Connecting...
+Connection succeeded
+ 
+******* Flight Info *******
+ 
+reg        N279UP   
+squawk     7362     
+ident      UPS4913  
+gs         536      
+clock      1419271754
+lon        -96.06475
+air_ground A        
+hexid      A2C9BB   
+heading    80       
+updateType A        
+lat        37.76723 
+alt        35000    
+type       position 
+id         UPS4913-1419253999-70-0
+ 
+******* Flight Info *******
+ 
+reg        N739MA   
+squawk     1754     
+ident      BSK323   
+gs         252      
+clock      1419271753
+lon        -92.22064
+air_ground A        
+hexid      A9ED8E   
+heading    157      
+updateType A        
+lat        38.71405 
+alt        4800     
+type       position 
+id         BSK323-1419245889-42-0
+ 
+******* Flight Info *******
+ 
+reg        GEZIM    
+lon        4.25537  
+ident      EZY8418  
+gs         436      
+clock      1419271753
+atcident   EZY76JA  
+air_ground A        
+hexid      400C4F   
+heading    336      
+squawk     6776     
+updateType A        
+lat        47.00784 
+alt        33300    
+type       position 
+id         EZY8418-1419057854-airline-0406:0
+
+

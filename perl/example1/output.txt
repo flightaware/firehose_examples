@@ -1,0 +1,245 @@
+Connected!
+LINE 1
+$VAR1 = {
+          'fdt' => '1473423300',
+          'type' => 'flightplan',
+          'status' => 'S',
+          'dest' => 'EDDB',
+          'facility_name' => 'Airline',
+          'ete' => '6600',
+          'eta' => '1473429900',
+          'aircrafttype' => 'A319',
+          'ident' => 'EZY6237',
+          'facility_hash' => 'fb69318716f52e9c266ef4ad76ceffb6b42c9ce9',
+          'pitr' => '1473380220',
+          'speed' => '363',
+          'orig' => 'EGGD',
+          'edt' => '1473423300',
+          'id' => 'EZY6237-1473226541-airline-0394'
+        };
+LINE 2
+$VAR1 = {
+          'ete' => '3720',
+          'reg' => 'N8696E',
+          'eta' => '1473377100',
+          'waypoints' => [
+                           {
+                             'lon' => '-87.75',
+                             'lat' => '41.79'
+                           },
+                           {
+                             'lon' => '-87.84',
+                             'lat' => '41.79'
+                           },
+                           {
+                             'lat' => '41.79',
+                             'lon' => '-87.87'
+                           },
+                           {
+                             'lat' => '39.48',
+                             'lon' => '-94.59'
+                           },
+                           {
+                             'lon' => '-94.71',
+                             'lat' => '39.3'
+                           }
+                         ],
+          'dest' => 'KMCI',
+          'facility_name' => 'Airline',
+          'speed' => '467',
+          'orig' => 'KMDW',
+          'route' => 'KMDW./.VORIN041016..QUANE..BQS.BQS4.KMCI/2326',
+          'edt' => '1473373380',
+          'ident' => 'SWA3002',
+          'pitr' => '1473380220',
+          'aircrafttype' => 'B738',
+          'status' => 'Z',
+          'type' => 'flightplan',
+          'fdt' => '1473373200',
+          'alt' => '2700',
+          'id' => 'SWA3002-1473140159-airline-0252',
+          'hexid' => 'ABF375',
+          'facility_hash' => 'fb69318716f52e9c266ef4ad76ceffb6b42c9ce9'
+        };
+LINE 3
+$VAR1 = {
+          'edt' => '1473468300',
+          'speed' => '391',
+          'orig' => 'KPIT',
+          'pitr' => '1473380220',
+          'ident' => 'FFT1093',
+          'eta' => '1473484200',
+          'reg' => 'N216FR',
+          'ete' => '15900',
+          'dest' => 'KLAS',
+          'facility_name' => 'Airline',
+          'id' => 'FFT1093-1473226201-airline-0321',
+          'facility_hash' => 'fb69318716f52e9c266ef4ad76ceffb6b42c9ce9',
+          'aircrafttype' => 'A320',
+          'fdt' => '1473468300',
+          'type' => 'flightplan',
+          'status' => 'S'
+        };
+LINE 4
+$VAR1 = {
+          'dest' => 'EGCC',
+          'facility_name' => 'Airline',
+          'type' => 'flightplan',
+          'fdt' => '1473449100',
+          'status' => 'S',
+          'eta' => '1473460200',
+          'aircrafttype' => 'B738',
+          'ete' => '10500',
+          'facility_hash' => 'fb69318716f52e9c266ef4ad76ceffb6b42c9ce9',
+          'pitr' => '1473380220',
+          'ident' => 'RYR8895',
+          'id' => 'RYR8895-1473226211-airline-0419',
+          'edt' => '1473449700',
+          'speed' => '384',
+          'orig' => 'LIBR'
+        };
+LINE 5
+$VAR1 = {
+          'ident' => 'JAI364',
+          'lon' => '73.26817',
+          'pitr' => '1473380220',
+          'gs' => '461',
+          'lat' => '19.72847',
+          'facility_name' => 'FlightAware ADS-B',
+          'reg' => 'VTJBL',
+          'updateType' => 'A',
+          'heading' => '344',
+          'facility_hash' => 'b4a580edcf3c4ba4302ce4aa6e3b36af39b1259f',
+          'air_ground' => 'A',
+          'altChange' => 'C',
+          'clock' => '1473380210',
+          'hexid' => '800547',
+          'id' => 'JAI364-1473225942-airline-0283',
+          'type' => 'position',
+          'squawk' => '0302',
+          'alt' => '26900'
+        };
+LINE 6
+$VAR1 = {
+          'type' => 'flightplan',
+          'fdt' => '1473394500',
+          'status' => 'S',
+          'dest' => 'RPLL',
+          'facility_name' => 'Airline',
+          'ete' => '2700',
+          'aircrafttype' => 'A320',
+          'eta' => '1473397800',
+          'ident' => 'CEB326',
+          'facility_hash' => 'fb69318716f52e9c266ef4ad76ceffb6b42c9ce9',
+          'pitr' => '1473380220',
+          'speed' => '165',
+          'orig' => 'RPLP',
+          'edt' => '1473395100',
+          'id' => 'CEB326-1473221700-schedule-0000'
+        };
+LINE 7
+$VAR1 = {
+          'pitr' => '1473380220',
+          'facility_hash' => 'fb69318716f52e9c266ef4ad76ceffb6b42c9ce9',
+          'ident' => 'ICE440',
+          'edt' => '1473408600',
+          'id' => 'ICE440-1473235200-schedule-0000',
+          'speed' => '346',
+          'orig' => 'BIKF',
+          'dest' => 'EGCC',
+          'facility_name' => 'Airline',
+          'status' => 'S',
+          'type' => 'flightplan',
+          'fdt' => '1473408000',
+          'aircrafttype' => 'B752',
+          'eta' => '1473416700',
+          'ete' => '8100'
+        };
+LINE 8
+$VAR1 = {
+          'type' => 'flightplan',
+          'fdt' => '1473451500',
+          'status' => 'S',
+          'facility_name' => 'Airline',
+          'dest' => 'EGCC',
+          'ete' => '8400',
+          'eta' => '1473460500',
+          'aircrafttype' => 'B738',
+          'ident' => 'RYR7545',
+          'facility_hash' => 'fb69318716f52e9c266ef4ad76ceffb6b42c9ce9',
+          'pitr' => '1473380220',
+          'speed' => '320',
+          'orig' => 'LEBL',
+          'id' => 'RYR7545-1473226211-airline-0350',
+          'edt' => '1473452100'
+        };
+LINE 9
+$VAR1 = {
+          'reg' => 'N132EV',
+          'eta' => '1473383940',
+          'ete' => '3900',
+          'dest' => 'KDTW',
+          'facility_name' => 'Airline',
+          'waypoints' => [
+                           {
+                             'lat' => '40',
+                             'lon' => '-82.89'
+                           },
+                           {
+                             'lon' => '-82.86',
+                             'lat' => '40.05'
+                           },
+                           {
+                             'lat' => '40.11',
+                             'lon' => '-82.81'
+                           },
+                           {
+                             'lat' => '42.1',
+                             'lon' => '-83.23'
+                           },
+                           {
+                             'lat' => '42.11',
+                             'lon' => '-83.25'
+                           },
+                           {
+                             'lat' => '42.17',
+                             'lon' => '-83.31'
+                           },
+                           {
+                             'lon' => '-83.35',
+                             'lat' => '42.21'
+                           }
+                         ],
+          'edt' => '1473380040',
+          'orig' => 'KCMH',
+          'speed' => '431',
+          'route' => 'KCMH..GIVES..DJB.GEMNI4.KDTW/0032',
+          'pitr' => '1473380220',
+          'ident' => 'ASQ5180',
+          'aircrafttype' => 'CRJ9',
+          'alt' => '25000',
+          'status' => 'F',
+          'fdt' => '1473379020',
+          'type' => 'flightplan',
+          'id' => 'ASQ5180-1473139757-airline-0499',
+          'facility_hash' => 'fb69318716f52e9c266ef4ad76ceffb6b42c9ce9'
+        };
+LINE 10
+$VAR1 = {
+          'ident' => 'RYR4051',
+          'facility_hash' => 'fb69318716f52e9c266ef4ad76ceffb6b42c9ce9',
+          'pitr' => '1473380220',
+          'orig' => 'LPFR',
+          'speed' => '379',
+          'id' => 'RYR4051-1473226208-airline-0472',
+          'edt' => '1473437700',
+          'fdt' => '1473437100',
+          'type' => 'flightplan',
+          'status' => 'S',
+          'facility_name' => 'Airline',
+          'dest' => 'EGCC',
+          'ete' => '9600',
+          'aircrafttype' => 'B738',
+          'eta' => '1473447300'
+        };
+All done.
