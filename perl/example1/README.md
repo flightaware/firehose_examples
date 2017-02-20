@@ -17,5 +17,5 @@ Change/remove count on the number of messages received.
 Run commands
 ------------
 
-    perl file_name.pl
+    perl example1.pl
 
