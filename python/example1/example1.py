@@ -1,13 +1,51 @@
 #!/usr/bin/env python
 
-import json, socket, ssl, sys, time
+import json, socket, ssl, sys, time, zlib
 
 
 username = "XXXXXXXXXX"
 apikey = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-compression = 0
+compression = None        # set to "deflate", "decompress", or "gzip" to enable compression
 servername = "firehose.flightaware.com"
 
+
+class InflateStream:
+   "A wrapper for a socket carrying compressed data that does streaming decompression"
+
+   def __init__(self, sock, mode):
+      self.sock = sock
+      self._buf = bytearray()
+      self._eof = False
+      if mode == 'deflate':     # no header, raw deflate stream
+         self._z = zlib.decompressobj(-zlib.MAX_WBITS)
+      elif mode == 'compress':  # zlib header
+         self._z = zlib.decompressobj(zlib.MAX_WBITS)
+      elif mode == 'gzip':      # gzip header
+         self._z = zlib.decompressobj(16 | zlib.MAX_WBITS)
+      else:
+         raise ValueError('unrecognized compression mode')
+
+   def _fill(self):
+      rawdata = self.sock.recv(8192)
+      if len(rawdata) == 0:
+         self._buf += self._z.flush()
+         self._eof = True
+      else:
+         self._buf += self._z.decompress(rawdata)
+
+   def readline(self):
+      newline = self._buf.find(b'\n')
+      while newline < 0 and not self._eof:
+         self._fill()
+         newline = self._buf.find(b'\n')
+
+      if newline >= 0:
+         rawline = self._buf[:newline+1]
+         del self._buf[:newline+1]
+         return rawline.decode('ascii')
+
+      # EOF
+      return ''
 
 
 # function to parse JSON data:
@@ -42,8 +80,8 @@ print("Connection succeeded")
 
 # build the initiation command:
 initiation_command = "live username {} password {}".format(username, apikey)
-if compression:
-   initiation_command += " compression gzip"
+if compression is not None:
+   initiation_command += " compression " + compression
 
 # send initialization command to server:
 initiation_command += "\n"
@@ -53,15 +91,8 @@ else:
     ssl_sock.write(initiation_command)
 
 # return a file object associated with the socket
-if compression:
-   if sys.version_info[0] >= 3:
-      from gzip import GzipFile
-      file = gzip.GzipFile(fileobj = ssl_sock.makefile('rb'), mode = 'r')
-   else:
-      # compression mode on Python 2 requires GzipStream handler from:
-      # https://fedorahosted.org/spacewalk/wiki/Projects/python-gzipstream
-      from gzipstream import GzipStream
-      file = GzipStream(ssl_sock.makefile('r'), 'r')
+if compression is not None:
+   file = InflateStream(sock = ssl_sock, mode = compression)
 else:
    file = ssl_sock.makefile('r')
 
@@ -70,10 +101,10 @@ count = 10
 while (count > 0):
    try :
       # read line from file:
-      if sys.version_info[0] >= 3 and compression:
-         inline = file.readline().decode('utf-8')
-      else:
-         inline = file.readline()
+      inline = file.readline()
+      if inline == '':
+         # EOF
+         break
 
       # print(inline)
 
