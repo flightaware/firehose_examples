@@ -55,7 +55,7 @@ def parse_json( str ):
        decoded = json.loads(str)
        clocknow = time.time()
        diff = clocknow - int(decoded['pitr'])
-       print "diff = {0:.2f} s".format(diff)
+       print("diff = {0:.2f} s".format(diff))
    except (ValueError, KeyError, TypeError):
        print("JSON format error: ", sys.exc_info()[0])
        print(str)
