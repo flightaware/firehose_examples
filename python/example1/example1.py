@@ -56,7 +56,7 @@ else:
 if compression:
    if sys.version_info[0] >= 3:
       from gzip import GzipFile
-      file = gzip.GzipFile(fileobj = ssl_sock.makefile('rb'), mode = 'r')
+      file = GzipFile(fileobj = ssl_sock.makefile('rb'), mode = 'r')
    else:
       # compression mode on Python 2 requires GzipStream handler from:
       # https://fedorahosted.org/spacewalk/wiki/Projects/python-gzipstream
