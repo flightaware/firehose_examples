@@ -86,7 +86,6 @@ namespace SSLClient
             // Do not allow this client to communicate with unauthenticated servers.
             return false;
         }
-
         public static void RunClient(string machineName, string serverName)
         {
             // Create a TCP/IP client socket.
@@ -118,6 +117,7 @@ namespace SSLClient
 
             // Send initiation command to the server.
             // Encode to a byte array.
+            Console.WriteLine(initiation_command);
             byte[] messsage = Encoding.UTF8.GetBytes(initiation_command + "\n");
             sslStream.Write(messsage);
             sslStream.Flush();
@@ -135,10 +135,27 @@ namespace SSLClient
             int limit = 1000;
             while (limit > 0)
             {
-                string line = sr.ReadLine();
-                Console.WriteLine(" Received: " + line);
-                parse(line);
-                limit--;
+                string line;
+                if (useCompression)
+                {
+                    line = sr.ReadLineAsync().Result;
+                }
+                else
+                {
+                    line = sr.ReadLine();
+                }
+                
+                if (line == null)
+                {
+                    limit = 0;
+                }
+                else
+                {
+                    Console.WriteLine(" Received: " + line);
+                    parse(line);
+                    limit--;
+                }
+                
             }
 
             // Close the client connection.

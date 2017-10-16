@@ -8,7 +8,7 @@ You can download PHP from https://www.php.net/. You may need to also install the
 On FreeBSD systems, you can use the following installation command:
     pkg install php56 php56-openssl php56-zlib php56-json
 
-If you are going to use this for live, low volume compression, please use example2 instead. This example is good for all other situations
+This example is better for live, low volume compression. Please use example1 if you are using this for anything other than that.
 
 What to change
 --------------
