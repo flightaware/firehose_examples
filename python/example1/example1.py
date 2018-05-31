@@ -53,9 +53,12 @@ def parse_json( str ):
    try:
        # parse all data into dictionary decoded:
        decoded = json.loads(str)
+       print(decoded)
+
+       # compute the latency of this message:
        clocknow = time.time()
        diff = clocknow - int(decoded['pitr'])
-       print("diff = {0:.2f} s".format(diff))
+       print("diff = {0:.2f} s\n".format(diff))
    except (ValueError, KeyError, TypeError):
        print("JSON format error: ", sys.exc_info()[0])
        print(str)

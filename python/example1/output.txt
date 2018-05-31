@@ -1,57 +1,32 @@
-
 Connecting...
 Connection succeeded
- 
-******* Flight Info *******
- 
-reg        N279UP   
-squawk     7362     
-ident      UPS4913  
-gs         536      
-clock      1419271754
-lon        -96.06475
-air_ground A        
-hexid      A2C9BB   
-heading    80       
-updateType A        
-lat        37.76723 
-alt        35000    
-type       position 
-id         UPS4913-1419253999-70-0
- 
-******* Flight Info *******
- 
-reg        N739MA   
-squawk     1754     
-ident      BSK323   
-gs         252      
-clock      1419271753
-lon        -92.22064
-air_ground A        
-hexid      A9ED8E   
-heading    157      
-updateType A        
-lat        38.71405 
-alt        4800     
-type       position 
-id         BSK323-1419245889-42-0
- 
-******* Flight Info *******
- 
-reg        GEZIM    
-lon        4.25537  
-ident      EZY8418  
-gs         436      
-clock      1419271753
-atcident   EZY76JA  
-air_ground A        
-hexid      400C4F   
-heading    336      
-squawk     6776     
-updateType A        
-lat        47.00784 
-alt        33300    
-type       position 
-id         EZY8418-1419057854-airline-0406:0
+{u'synthetic': u'1', u'adt': u'1527787251', u'ident': u'BLOCKED', u'facility_name': u'FlightAware ADS-B', u'pitr': u'1527787259', u'reg': u'BLOCKED', u'facility_hash': u'5F108B0455C84B6A', u'aircrafttype': u'P28A', u'type': u'departure', u'id': u'BLOCKED-1527787251-adhoc-0', u'orig': u'KFXE'}
+diff = 5.03 s
 
+{u'status': u'A', u'ident': u'BLOCKED', u'aircrafttype': u'P28A', u'speed': u'0', u'facility_name': u'FlightAware ADS-B', u'pitr': u'1527787259', u'reg': u'BLOCKED', u'facility_hash': u'5F108B0455C84B6A', u'fdt': u'1527787251', u'edt': u'1527787251', u'type': u'flightplan', u'id': u'BLOCKED-1527787251-adhoc-0', u'orig': u'KFXE'}
+diff = 5.03 s
+
+{u'status': u'A', u'ident': u'BLOCKED', u'aircrafttype': u'P28A', u'speed': u'0', u'facility_name': u'FlightAware Estimated', u'pitr': u'1527787259', u'hexid': u'BLOCKED', u'reg': u'BLOCKED', u'facility_hash': u'202769E5419AED2', u'fdt': u'1527787251', u'edt': u'1527787251', u'type': u'flightplan', u'id': u'BLOCKED-1527787251-adhoc-0', u'orig': u'KFXE'}
+diff = 5.03 s
+
+{u'reg': u'BLOCKED', u'lon': u'-80.15525', u'ident': u'BLOCKED', u'gs': u'110', u'clock': u'1527787251', u'altChange': u' ', u'facility_name': u'FlightAware ADS-B', u'pitr': u'1527787259', u'air_ground': u'A', u'hexid': u'BLOCKED', u'heading': u'322', u'facility_hash': u'5F108B0455C84B6A', u'aircrafttype': u'P28A', u'updateType': u'A', u'lat': u'26.21999', u'alt': u'825', u'type': u'position', u'id': u'BLOCKED-1527787251-adhoc-0'}
+diff = 5.03 s
+
+{u'reg': u'HSLTS', u'lon': u'101.30915', u'ident': u'TLM929', u'gs': u'479', u'clock': u'1527787251', u'altChange': u' ', u'facility_name': u'FlightAware ADS-B', u'pitr': u'1527787259', u'air_ground': u'A', u'hexid': u'883293', u'heading': u'207', u'facility_hash': u'4AF6A75430228056', u'squawk': u'5070', u'updateType': u'A', u'lat': u'15.73000', u'alt': u'34000', u'type': u'position', u'id': u'TLM929-1527571549-airline-0440'}
+diff = 5.03 s
+
+{u'lon': u'-92.98694', u'ident': u'N944TT', u'gs': u'125', u'clock': u'1527787242', u'dest': u'KADS', u'altChange': u' ', u'facility_name': u'Houston Center', u'pitr': u'1527787259', u'air_ground': u'A', u'heading': u'278', u'facility_hash': u'6CD7605BCF54E38C', u'updateType': u'Z', u'lat': u'30.96806', u'alt': u'10000', u'type': u'position', u'id': u'N944TT-1527777676-3-0-9', u'orig': u'KNEW'}
+diff = 5.03 s
+
+{u'reg': u'N987HP', u'lon': u'-118.49237', u'ident': u'N987HP', u'gs': u'122', u'clock': u'1527787252', u'altChange': u' ', u'facility_name': u'FlightAware ADS-B', u'pitr': u'1527787259', u'air_ground': u'A', u'hexid': u'ADC5E2', u'heading': u'177', u'facility_hash': u'81C113504F8CAC1A', u'aircrafttype': u'CL30', u'updateType': u'A', u'lat': u'34.23221', u'alt': u'1225', u'type': u'position', u'id': u'N987HP-1527735771-dlad-5743947'}
+diff = 5.03 s
+
+{u'status': u'A', u'speed': u'445', u'ident': u'HGT3572', u'edt': u'1527785040', u'dest': u'KSJC', u'route': u'KHIO.BERNI3.FAMUK.Q3.FOWND..CHBLI.BRIXX2.KSJC/1829', u'facility_name': u'Oakland Center', u'pitr': u'1527787259', u'hexid': u'A471AC', u'reg': u'N386AZ', u'eta': u'1527789942', u'fdt': u'1527785100', u'aircrafttype': u'E45X', u'ete': u'4902', u'waypoints': [{u'lat': 45.54, u'lon': -122.95}, {u'lat': 45.45, u'lon': -122.98}, {u'lat': 45.42, u'lon': -122.99}, {u'lat': 45.42, u'lon': -122.99}, {u'lat': 45.4, u'lon': -123.0}, {u'lat': 45.37, u'lon': -123.01}, {u'lat': 45.33, u'lon': -123.02}, {u'lat': 45.31, u'lon': -123.04}, {u'lat': 45.29, u'lon': -123.06}, {u'lat': 45.2, u'lon': -123.14}, {u'lat': 45.17, u'lon': -123.17}, {u'lat': 45.12, u'lon': -123.21}, {u'lat': 45.01, u'lon': -123.19}, {u'lat': 44.9, u'lon': -123.18}, {u'lat': 44.79, u'lon': -123.17}, {u'lat': 44.74, u'lon': -123.16}, {u'lat': 44.54, u'lon': -123.14}, {u'lat': 44.5, u'lon': -123.14}, {u'lat': 44.35, u'lon': -123.13}, {u'lat': 44.2, u'lon': -123.12}, {u'lat': 44.15, u'lon': -123.12}, {u'lat': 44.12, u'lon': -123.12}, {u'lat': 43.88, u'lon': -123.11}, {u'lat': 43.8, u'lon': -123.11}, {u'lat': 43.64, u'lon': -123.11}, {u'lat': 43.5, u'lon': -123.1}, {u'lat': 43.45, u'lon': -123.1}, {u'lat': 42.48, u'lon': -123.07}, {u'lat': 42.31, u'lon': -123.06}, {u'lat': 41.34, u'lon': -123.03}, {u'lat': 41.33, u'lon': -123.03}, {u'lat': 39.1, u'lon': -122.96}, {u'lat': 39.04, u'lon': -122.92}, {u'lat': 38.84, u'lon': -122.76}, {u'lat': 38.77, u'lon': -122.7}, {u'lat': 38.59, u'lon': -122.56}, {u'lat': 38.56, u'lon': -122.54}, {u'lat': 38.49, u'lon': -122.54}, {u'lat': 38.43, u'lon': -122.53}, {u'lat': 38.19, u'lon': -122.53}, {u'lat': 38.17, u'lon': -122.53}, {u'lat': 38.13, u'lon': -122.52}, {u'lat': 38.06, u'lon': -122.52}, {u'lat': 37.94, u'lon': -122.51}, {u'lat': 37.93, u'lon': -122.51}, {u'lat': 37.84, u'lon': -122.51}, {u'lat': 37.73, u'lon': -122.5}, {u'lat': 37.7, u'lon': -122.46}, {u'lat': 37.69, u'lon': -122.45}, {u'lat': 37.62, u'lon': -122.37}, {u'lat': 37.61, u'lon': -122.37}, {u'lat': 37.6, u'lon': -122.37}, {u'lat': 37.55, u'lon': -122.34}, {u'lat': 37.49, u'lon': -122.31}, {u'lat': 37.48, u'lon': -122.3}, {u'lat': 37.46, u'lon': -122.29}, {u'lat': 37.39, u'lon': -122.26}, {u'lat': 37.35, u'lon': -122.24}, {u'lat': 37.29, u'lon': -122.2}, {u'lat': 37.25, u'lon': -122.15}, {u'lat': 37.25, u'lon': -122.15}, {u'lat': 37.23, u'lon': -122.11}, {u'lat': 37.21, u'lon': -122.05}, {u'lat': 37.2, u'lon': -122.02}, {u'lat': 37.21, u'lon': -122.02}, {u'lat': 37.29, u'lon': -121.97}, {u'lat': 37.36, u'lon': -121.93}, {u'lat': 37.36, u'lon': -121.93}], u'alt': u'33000', u'type': u'flightplan', u'id': u'HGT3572-1527774326-1-5-122', u'facility_hash': u'844BE52BA37B3ADD', u'orig': u'KHIO'}
+diff = 5.03 s
+
+{u'reg': u'FHBAP', u'lon': u'3.23969', u'ident': u'AAF707', u'gs': u'435', u'clock': u'1527787253', u'altChange': u' ', u'facility_name': u'FlightAware ADS-B', u'pitr': u'1527787259', u'air_ground': u'A', u'hexid': u'39840F', u'heading': u'190', u'facility_hash': u'D9BA883A5213DBFD', u'squawk': u'4050', u'updateType': u'A', u'lat': u'38.74957', u'alt': u'39050', u'type': u'position', u'id': u'AAF707-1527571553-airline-0496'}
+diff = 5.03 s
+
+{u'status': u'S', u'speed': u'455', u'ident': u'AAL2448', u'edt': u'1527864540', u'dest': u'KJFK', u'route': u'KSAN.ZZOOO2.IPL.J18.SJN..KA33U..KA36W..KA39Y..KK42A..KK45C..KK48E..BUM..KK54K..KI57O..ROD..DJB..JHW.J70.LVZ.LENDY6.KJFK', u'facility_name': u'', u'pitr': u'1527787259', u'waypoints': [{u'lat': 32.73, u'lon': -117.19}, {u'lat': 32.75, u'lon': -117.28}, {u'lat': 32.73, u'lon': -117.27}, {u'lat': 32.68, u'lon': -117.26}, {u'lat': 32.66, u'lon': -117.25}, {u'lat': 32.64, u'lon': -117.25}, {u'lat': 32.63, u'lon': -117.25}, {u'lat': 32.63, u'lon': -117.22}, {u'lat': 32.63, u'lon': -117.19}, {u'lat': 32.61, u'lon': -116.99}, {u'lat': 32.6, u'lon': -116.92}, {u'lat': 32.63, u'lon': -116.8}, {u'lat': 32.63, u'lon': -116.8}, {u'lat': 32.63, u'lon': -116.77}, {u'lat': 32.63, u'lon': -116.76}, {u'lat': 32.63, u'lon': -116.76}, {u'lat': 32.64, u'lon': -116.72}, {u'lat': 32.64, u'lon': -116.65}, {u'lat': 32.65, u'lon': -116.58}, {u'lat': 32.65, u'lon': -116.55}, {u'lat': 32.66, u'lon': -116.51}, {u'lat': 32.67, u'lon': -116.41}, {u'lat': 32.68, u'lon': -116.26}, {u'lat': 32.69, u'lon': -116.18}, {u'lat': 32.7, u'lon': -116.03}, {u'lat': 32.71, u'lon': -115.94}, {u'lat': 32.72, u'lon': -115.85}, {u'lat': 32.73, u'lon': -115.71}, {u'lat': 32.73, u'lon': -115.67}, {u'lat': 32.75, u'lon': -115.51}, {u'lat': 32.75, u'lon': -115.27}, {u'lat': 32.77, u'lon': -114.6}, {u'lat': 32.77, u'lon': -114.07}, {u'lat': 32.78, u'lon': -114.0}, {u'lat': 32.78, u'lon': -113.97}, {u'lat': 32.82, u'lon': -113.69}, {u'lat': 32.96, u'lon': -112.67}, {u'lat': 33.43, u'lon': -111.97}, {u'lat': 33.54, u'lon': -111.67}, {u'lat': 33.69, u'lon': -111.27}, {u'lat': 33.84, u'lon': -110.84}, {u'lat': 34.01, u'lon': -110.35}, {u'lat': 34.26, u'lon': -109.63}, {u'lat': 34.35, u'lon': -109.37}, {u'lat': 34.42, u'lon': -109.14}, {u'lat': 34.78, u'lon': -108.15}, {u'lat': 35.12, u'lon': -107.14}, {u'lat': 35.29, u'lon': -106.63}, {u'lat': 35.5, u'lon': -106.0}, {u'lat': 35.64, u'lon': -105.44}, {u'lat': 36.0, u'lon': -104.0}, {u'lat': 36.02, u'lon': -103.92}, {u'lat': 36.08, u'lon': -103.68}, {u'lat': 36.5, u'lon': -102.0}, {u'lat': 36.55, u'lon': -101.79}, {u'lat': 36.84, u'lon': -100.67}, {u'lat': 37.0, u'lon': -100.0}, {u'lat': 37.02, u'lon': -99.94}, {u'lat': 37.5, u'lon': -98.0}, {u'lat': 37.56, u'lon': -97.78}, {u'lat': 38.0, u'lon': -96.0}, {u'lat': 38.25, u'lon': -94.59}, {u'lat': 38.27, u'lon': -94.49}, {u'lat': 38.41, u'lon': -93.7}, {u'lat': 38.81, u'lon': -91.32}, {u'lat': 39.0, u'lon': -90.0}, {u'lat': 39.02, u'lon': -89.85}, {u'lat': 39.12, u'lon': -89.11}, {u'lat': 39.16, u'lon': -88.86}, {u'lat': 39.25, u'lon': -88.12}, {u'lat': 39.41, u'lon': -86.81}, {u'lat': 39.5, u'lon': -86.0}, {u'lat': 39.79, u'lon': -85.3}, {u'lat': 40.29, u'lon': -84.04}, {u'lat': 40.68, u'lon': -83.37}, {u'lat': 41.36, u'lon': -82.16}, {u'lat': 41.7, u'lon': -80.95}, {u'lat': 42.19, u'lon': -79.12}, {u'lat': 41.87, u'lon': -77.85}, {u'lat': 41.79, u'lon': -77.55}, {u'lat': 41.77, u'lon': -77.49}, {u'lat': 41.68, u'lon': -77.15}, {u'lat': 41.55, u'lon': -76.67}, {u'lat': 41.53, u'lon': -76.6}, {u'lat': 41.39, u'lon': -76.11}, {u'lat': 41.36, u'lon': -76.01}, {u'lat': 41.31, u'lon': -75.83}, {u'lat': 41.31, u'lon': -75.82}, {u'lat': 41.27, u'lon': -75.69}, {u'lat': 41.26, u'lon': -75.64}, {u'lat': 41.21, u'lon': -75.51}, {u'lat': 41.19, u'lon': -75.44}, {u'lat': 41.15, u'lon': -75.33}, {u'lat': 41.14, u'lon': -75.29}, {u'lat': 41.1, u'lon': -75.17}, {u'lat': 41.08, u'lon': -75.12}, {u'lat': 41.07, u'lon': -75.09}, {u'lat': 41.06, u'lon': -75.05}, {u'lat': 41.03, u'lon': -74.97}, {u'lat': 41.02, u'lon': -74.93}, {u'lat': 41.01, u'lon': -74.92}, {u'lat': 41.0, u'lon': -74.9}, {u'lat': 41.0, u'lon': -74.87}, {u'lat': 41.0, u'lon': -74.86}, {u'lat': 40.99, u'lon': -74.84}, {u'lat': 40.99, u'lon': -74.77}, {u'lat': 40.98, u'lon': -74.73}, {u'lat': 40.97, u'lon': -74.67}, {u'lat': 40.97, u'lon': -74.66}, {u'lat': 40.95, u'lon': -74.44}, {u'lat': 40.94, u'lon': -74.35}, {u'lat': 40.93, u'lon': -74.23}, {u'lat': 40.92, u'lon': -74.16}, {u'lat': 40.91, u'lon': -74.14}, {u'lat': 40.91, u'lon': -74.12}, {u'lat': 40.86, u'lon': -74.02}, {u'lat': 40.83, u'lon': -73.97}, {u'lat': 40.81, u'lon': -73.92}, {u'lat': 40.8, u'lon': -73.91}, {u'lat': 40.79, u'lon': -73.88}, {u'lat': 40.78, u'lon': -73.87}, {u'lat': 40.71, u'lon': -73.83}, {u'lat': 40.71, u'lon': -73.82}, {u'lat': 40.64, u'lon': -73.78}], u'reg': u'N955AN', u'eta': u'1527881306', u'fdt': u'1527864900', u'aircrafttype': u'B738', u'ete': u'16766', u'alt': u'35000', u'type': u'flightplan', u'id': u'AAL2448-1527657976-airline-0584', u'facility_hash': u'81E755935A704D47', u'orig': u'KSAN'}
+diff = 5.03 s
 
