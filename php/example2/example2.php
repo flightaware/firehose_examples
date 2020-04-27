@@ -42,10 +42,15 @@ class InflateStream {
 }
 
 // Open the TLS socket connection to FlightAware.
-$fp = fsockopen("tls://firehose.flightaware.com", 1501, $errno, $errstr, 30);
+$fp = fsockopen("tcp://firehose.flightaware.com", 1501, $errno, $errstr, 30);
 if (!$fp) {
     echo "Error connecting ($errno): $errstr\n";
     exit(1);
+}
+if (!stream_socket_enable_crypto($fp, true, STREAM_CRYPTO_METHOD_TLSv1_2_CLIENT)) {
+   echo "Error negotiating TLS\n";
+   fclose($fp);
+   exit(1);
 }
 echo "Connected!\n";
 

@@ -68,11 +68,11 @@ def parse_json( str ):
 # Create socket
 sock = socket.socket(socket.AF_INET)
 # Create a SSL context with the recommended security settings for client sockets, including automatic certificate verification
-context = ssl.create_default_context()
-# Alternatively, a customized context could be created
-#context = ssl.SSLContext(ssl.PROTOCOL_SSLv23)
-#context.verify_mode = ssl.CERT_REQUIRED
-#context.check_hostname = True
+context = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+# the folowing line requires Python 3.7+ and OpenSSL 1.1.0g+ to specify minimum_version
+context.minimum_version = TLSVersion.TLS_v1_2
+context.verify_mode = ssl.CERT_REQUIRED
+context.check_hostname = True
 # Load a set of default CA certificates from default locations
 #context.load_default_certs()
 

@@ -73,6 +73,7 @@ public class SSL_Client_gson {
             // enable certifcate validation:
             SSLParameters sslParams = new SSLParameters();
             sslParams.setEndpointIdentificationAlgorithm("HTTPS");
+            sslParams.setProtocols(new String[] {"TLSv1.2"});
             ssl_socket.setSSLParameters(sslParams);
 
             if (useCompression) {

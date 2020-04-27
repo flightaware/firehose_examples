@@ -99,8 +99,12 @@ namespace SSLClient
                 null);
             try
             {
+                // require at least TLS 1.2 (this enumeration exists starting in .NET 4.5)
+                // (older platforms use:) var sslProtocols = (SslProtocols)0x00000C00;
+                var sslProtocols = SslProtocols.Tls12;
+
                 // server name must match name on the server certificate.
-                sslStream.AuthenticateAsClient(serverName);
+                sslStream.AuthenticateAsClient(serverName, null, sslProtocols, true);
                 Console.WriteLine("sslStream AuthenticateAsClient completed.");
             }
             catch (AuthenticationException e)
