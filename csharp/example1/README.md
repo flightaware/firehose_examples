@@ -1,6 +1,8 @@
 Requirements
 ------------
 
+This example was tested against .NET Core 3.1 under Visual Studio 2019 on Windows 10.
+
 Parsing JSON in C# can be done using .NET Framework Classes or by downloading a third party library.
 
 There are plenty of libraries to choose from http://www.json.org/
@@ -24,7 +26,7 @@ Alternatively, you can run commands (Win32):
 
 Compile:
 
-    csc example1.cs
+    dotnet build example1.csproj
 
 Run:
 
