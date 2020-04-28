@@ -1,7 +1,7 @@
 Requirements
 ------------
 
-This example was tested against .NET Core 3.1 under Visual Studio 2019 on Windows 10.
+This example was tested against .NET Core 3.1 under Visual Studio 2019 on Windows 10. It has also been tested against the .NET Core 3.1 SDK Docker Linux container: `mcr.microsoft.com/dotnet/core/sdk:3.1`
 
 Parsing JSON in C# can be done using .NET Framework Classes or by downloading a third party library.
 

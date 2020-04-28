@@ -17,19 +17,19 @@ namespace SSLClient
     public class FlightObject
     {
 
-        public String type;
-        public String ident;
-        public String air_ground;
-        public String alt;
-        public String clock;
-        public String id;
-        public String gs;
-        public String heading;
-        public String lat;
-        public String lon;
-        public String reg;
-        public String squawk;
-        public String updateType;
+        public String type { get; set; }
+        public String ident { get; set; }
+        public String air_ground { get; set; }
+        public String alt { get; set; }
+        public String clock { get; set; }
+        public String id { get; set; }
+        public String gs { get; set; }
+        public String heading { get; set; }
+        public String lat { get; set; }
+        public String lon { get; set; }
+        public String reg { get; set; }
+        public String squawk { get; set; }
+        public String updateType { get; set; }
 
 
         public String toString()
