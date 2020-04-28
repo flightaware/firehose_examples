@@ -5,7 +5,7 @@ Parsing JSON in C# can be done using .NET Framework Classes or by downloading a 
 
 There are plenty of libraries to choose from http://www.json.org/
 
-For this example we are going to use Json.NET - "a popular high-performance JSON framework for .NET". Download Json.NET from http://json.codeplex.com/
+For this example we are going to use System.Text.Json, which is included with .NET Core 3.0 and higher, however it can also be downloaded from NuGet for certain other .NET Framework versions.
 
 
 What to change

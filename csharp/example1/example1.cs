@@ -9,7 +9,7 @@ using System.Text;
 using System.Security.Cryptography.X509Certificates;
 using System.IO;
 using System.IO.Compression;
-using Newtonsoft.Json;
+using System.Text.Json;             // requires .NET Core 3.0 or higher, or the NuGet package
 
 namespace SSLClient
 {
@@ -170,8 +170,7 @@ namespace SSLClient
 
         public static void parse(string mes)
         {
-            //parse with JSON.NET
-            FlightObject flight = JsonConvert.DeserializeObject<FlightObject>(mes);
+            FlightObject flight = JsonSerializer.Deserialize<FlightObject>(mes);
             Console.WriteLine(" --------------- Message ------------------ \n");
             Console.WriteLine(flight.toString());
             Console.WriteLine(" ------------------------------------------ \n");
