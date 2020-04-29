@@ -1,4 +1,4 @@
-<?
+<?php
 #Always use this example if you are not using compression
 #Also use this example if you are using compression, and expecting a high volume of messages
 
