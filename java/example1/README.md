@@ -27,8 +27,8 @@ Alternatively you can run commands such as (Win32):
 
 Compile:
 
-    javac -classpath "xxx\gson-2.3.1.jar" SSL_Client_gson.java
+    javac -classpath "xxx\gson-2.8.6.jar" SSL_Client_gson.java
 
 Run:
 
-    java -classpath "xxx\gson-2.3.1.jar;." SSL_Client_gson
+    java -classpath "xxx\gson-2.8.6.jar;." SSL_Client_gson
