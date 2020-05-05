@@ -140,6 +140,7 @@ public class Example3 {
             ssl_socket = (SSLSocket) SSLSocketFactory.getDefault().createSocket(machineName, 1501);
             SSLParameters sslParams = new SSLParameters();
             sslParams.setEndpointIdentificationAlgorithm("HTTPS");
+            sslParams.setProtocols(new String[] {"TLSv1.2"});
             ssl_socket.setSSLParameters(sslParams);
 
             if (useCompression) {
@@ -170,21 +171,21 @@ public class Example3 {
                 // Filter by message type
                 if (flight.type.equals("arrival") || flight.type.equals("departure")) {
                     // Get last value from map
-	                Flight f = flights.get(flight.id);
-	                if (f == null) {
-	                    // Add a value to map
-	                    f = new Flight();
+                    Flight f = flights.get(flight.id);
+                    if (f == null) {
+                        // Add a value to map
+                        f = new Flight();
                         flights.put(flight.id, f);
                     }
                     // Update either the arrival or departure
                     if (flight.type.equals("arrival")) {
-	                    f.arrival = flight;
-	                } else {
-	                    f.departure = flight;
-	                }
-	                // Every 30 seconds print out the collection
-	                long now = System.currentTimeMillis();
-	                if (now - start > TimeUnit.SECONDS.toMillis(30)) {
+                            f.arrival = flight;
+                        } else {
+                            f.departure = flight;
+                        }
+                        // Every 30 seconds print out the collection
+                        long now = System.currentTimeMillis();
+                        if (now - start > TimeUnit.SECONDS.toMillis(30)) {
                         start = now;
                         PrintBoard();
                     }

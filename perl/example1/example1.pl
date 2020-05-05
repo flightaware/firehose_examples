@@ -11,7 +11,10 @@ my $apikey = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 my $compression = 0;
 
 # Open the TLS socket connection to FlightAware.
-my $sock = IO::Socket::SSL->new('firehose-test.flightaware.com:1501') or die $!;
+my $sock = IO::Socket::SSL->new(
+    PeerHost => 'firehose-test.flightaware.com',
+    PeerPort => 1501,
+    SSL_version => 'TLSv1_2') or die $!;
 print "Connected!\n";
 
 # Send the initiation command to the uncompressed socket.

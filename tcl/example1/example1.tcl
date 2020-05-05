@@ -13,7 +13,7 @@ set compression 0
 
 
 # Open the TLS socket connection to FlightAware.
-set sock [tls::socket -tls1 1 $hostname 1501]
+set sock [tls::socket -ssl2 0 -ssl3 0 -tls1 0 -tls1.1 0 -tls1.2 1 $hostname 1501]
 puts "Connected!"
 
 # Send the initiation command to the server.

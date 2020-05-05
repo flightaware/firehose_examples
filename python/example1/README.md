@@ -3,7 +3,7 @@ Requirements
 
 * Python 3
 
-You can download python from https://www.python.org/downloads/. Please note that while older versions of Python 2.7.9 or higher may work with this example, we encourage the use of Python 3.
+You can download python from https://www.python.org/downloads/. Please note that older versions of Python 2 are no longer recommended for use.
 
 
 What to change
@@ -20,5 +20,5 @@ Running the example
 
 Run commands:
 
-    python example1.py
+    python3 example1.py
 

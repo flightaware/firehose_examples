@@ -9,7 +9,7 @@ using System.Text;
 using System.Security.Cryptography.X509Certificates;
 using System.IO;
 using System.IO.Compression;
-using Newtonsoft.Json;
+using System.Text.Json;             // requires .NET Core 3.0 or higher, or the NuGet package
 
 namespace SSLClient
 {
@@ -17,19 +17,19 @@ namespace SSLClient
     public class FlightObject
     {
 
-        public String type;
-        public String ident;
-        public String air_ground;
-        public String alt;
-        public String clock;
-        public String id;
-        public String gs;
-        public String heading;
-        public String lat;
-        public String lon;
-        public String reg;
-        public String squawk;
-        public String updateType;
+        public String type { get; set; }
+        public String ident { get; set; }
+        public String air_ground { get; set; }
+        public String alt { get; set; }
+        public String clock { get; set; }
+        public String id { get; set; }
+        public String gs { get; set; }
+        public String heading { get; set; }
+        public String lat { get; set; }
+        public String lon { get; set; }
+        public String reg { get; set; }
+        public String squawk { get; set; }
+        public String updateType { get; set; }
 
 
         public String toString()
@@ -99,8 +99,12 @@ namespace SSLClient
                 null);
             try
             {
+                // require at least TLS 1.2 (this enumeration exists starting in .NET 4.5)
+                // (older platforms use:) var sslProtocols = (SslProtocols)0x00000C00;
+                var sslProtocols = SslProtocols.Tls12;
+
                 // server name must match name on the server certificate.
-                sslStream.AuthenticateAsClient(serverName);
+                sslStream.AuthenticateAsClient(serverName, null, sslProtocols, true);
                 Console.WriteLine("sslStream AuthenticateAsClient completed.");
             }
             catch (AuthenticationException e)
@@ -166,8 +170,7 @@ namespace SSLClient
 
         public static void parse(string mes)
         {
-            //parse with JSON.NET
-            FlightObject flight = JsonConvert.DeserializeObject<FlightObject>(mes);
+            FlightObject flight = JsonSerializer.Deserialize<FlightObject>(mes);
             Console.WriteLine(" --------------- Message ------------------ \n");
             Console.WriteLine(flight.toString());
             Console.WriteLine(" ------------------------------------------ \n");
