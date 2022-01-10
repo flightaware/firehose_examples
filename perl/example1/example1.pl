@@ -18,7 +18,7 @@ my $sock = IO::Socket::SSL->new(
 print "Connected!\n";
 
 # Send the initiation command to the uncompressed socket.
-my $initcmd = "live version 7.0 user $username password $apikey events \"flightplan position\"";
+my $initcmd = "live version 7.0 user $username password $apikey events \"flifo position\"";
 if ($compression) {
     $initcmd .= " compression compress";
 }

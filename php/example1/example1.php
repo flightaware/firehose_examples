@@ -22,7 +22,7 @@ if (!stream_socket_enable_crypto($fp, true, STREAM_CRYPTO_METHOD_TLSv1_2_CLIENT)
 echo "Connected!\n";
 
 // Send the initiation command to the uncompressed socket.
-$initcmd = "live version 7.0 user $username password $apikey events \"flightplan position\"";
+$initcmd = "live version 7.0 user $username password $apikey events \"flifo position\"";
 if ($compression) {
     // compress, gzip, deflate
     $initcmd .= " compression deflate";

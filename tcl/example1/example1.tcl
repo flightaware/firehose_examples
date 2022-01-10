@@ -17,7 +17,7 @@ set sock [tls::socket -ssl2 0 -ssl3 0 -tls1 0 -tls1.1 0 -tls1.2 1 $hostname 1501
 puts "Connected!"
 
 # Send the initiation command to the server.
-set initcmd "live version 7.0 user $username password $apikey events {flightplan position}"
+set initcmd "live version 7.0 user $username password $apikey events {flifo position}"
 if {$compression} {
 	append initcmd " compression deflate"
 }
